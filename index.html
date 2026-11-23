@@ -2063,6 +2063,8 @@
   .cover-entry-groups{display:grid;grid-template-columns:.92fr 1.18fr;gap:1.25vw;align-items:start}
   .cover-entry-group{border-top:1px solid rgba(var(--paper-rgb),.36);padding-top:1.05vh;min-width:0}
   .cover-entry-group.public{border-top-width:2px}
+  .cover-entry-group.agents{grid-column:1/-1}
+  .cover-agent-links{display:grid;grid-template-columns:1fr 1fr;gap:1.25vw;margin-top:.7vh}
   .cover-entry-tag{font-family:var(--mono);font-size:max(12px,0.77vw);letter-spacing:.15em;text-transform:uppercase;opacity:.55}
   .cover-entry-group h3{font-family:var(--serif-zh);font-size:max(18px,1.19vw);line-height:1.28;margin-top:.42vh}
   .cover-entry-group .group-note{font-family:var(--sans-zh);font-size:max(12px,0.78vw);line-height:1.42;opacity:.56;margin-top:.5vh;min-height:2.8em}
@@ -2263,10 +2265,14 @@
           </div>
         </section>
       </div>
-      <div class="cover-source-row" data-anim>
-        <a href="https://github.com/noxinsun-source/logic-chain-project-a" target="_blank" rel="noopener"><strong>功能 A · GitHub</strong><span>logic-chain-project-a ↗</span></a>
-        <a href="https://github.com/noxinsun-source/knowledge-completion" target="_blank" rel="noopener"><strong>功能 B · GitHub</strong><span>knowledge-completion ↗</span></a>
-      </div>
+      <section class="cover-entry-group agents" data-anim>
+        <div class="cover-entry-tag">Open Source · Dual Agents</div>
+        <h3>双 Agent 功能模块 · 开源仓库</h3>
+        <div class="cover-agent-links">
+          <a class="cover-entry-link" href="https://github.com/noxinsun-source/logic-chain-project-a" target="_blank" rel="noopener"><span class="link-copy"><b>AI 对话梳逻辑功能模块</b><em>GitHub · logic-chain-project-a</em></span><small>OPEN SOURCE ↗</small></a>
+          <a class="cover-entry-link" href="https://github.com/noxinsun-source/knowledge-completion" target="_blank" rel="noopener"><span class="link-copy"><b>知识补全扩散功能模块</b><em>GitHub · knowledge-completion</em></span><small>OPEN SOURCE ↗</small></a>
+        </div>
+      </section>
     </div>
   </div>
   <div class="foot">
